@@ -32,7 +32,7 @@ public class ProblemSet {
 					if(email1.substring(email1.indexOf('@')+1,email1.lastIndexOf(',')).equals("gmail.com")){ 
 						//make sure suffix is "gmail.com" will print "valid(gmail normalized)".
 					  if (email1.contains(" ")){     
-						//“email" have space inside will print.
+						//“email" have space inside will print"invalid:email don't have space".
 						System.out.println("invalid:email don't have space");
                              }else{
 							 System.out.print("");
