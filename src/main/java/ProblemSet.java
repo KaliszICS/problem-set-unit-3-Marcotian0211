@@ -33,14 +33,14 @@ public class ProblemSet {
 						//make sure suffix is "gmail.com" will print "valid(gmail normalized)".
 					  if (email1.contains(" ")){     
 						//“email" have space inside will print"invalid:email don't have space".
-						System.out.println("invalid:email don't have space");
+						System.out.println("Invalid:email don't have space");
                              }else{
 							 System.out.print("");
-					  }System.out.println(email1.substring(0,email1.indexOf(','))+": "+"valid(gmail normalized) | local: "+ email1.substring(0, email1.indexOf('@')) 
-                   + " | domain: " + email1.substring(email1.indexOf('@') )) ;
+					  }System.out.println(email1.substring(0,email1.indexOf(','))+": "+"Valid(gmail normalized) | Local: "+ email1.substring(0, email1.indexOf('@')) 
+                   + " | Domain: " + email1.substring(email1.indexOf('@') )) ;
 	}else{
-					System.out.println(email1.substring(0,email1.indexOf(','))+": "+"valid | local: "+ email1.substring(0, email1.indexOf('@')) 
-                   + " | domain: " + email1.substring(email1.indexOf('@'))) ;
+					System.out.println(email1.substring(0,email1.indexOf(','))+": "+"Valid | Local: "+ email1.substring(0, email1.indexOf('@')) 
+                   + " | Domain: " + email1.substring(email1.indexOf('@'))) ;
 	}}else{
 					System.out.println("Invalid:Your email is too long or too short before the '@'");
 	}}else{
@@ -64,14 +64,14 @@ public class ProblemSet {
 						//make sure suffix is "gmail.com" will print "valid(gmail normalized)".
 					  if (email2.contains(" ")){     
 						//“email" have space inside.
-						System.out.println("invalid:email can't have space");
+						System.out.println("Invalid:email can't have space");
                              }else{
 								System.out.print("");
 							 
-							}System.out.println(email2 +": " +"valid(gmail normalized) | local: " + email2.substring(0, email2.indexOf('@')) 
-                   + " | domain: " + email2.substring(email2.indexOf('@') + 1));
+							}System.out.println(email2 +": " +"Valid(gmail normalized) | Local: " + email2.substring(0, email2.indexOf('@')) 
+                   + " | Domain: " + email2.substring(email2.indexOf('@') + 1));
 				}else{
-					System.out.println(email2+": "+"valid | local:"+email2.substring(0,email2.indexOf('@'))+" | domain: "+email2.indexOf('@'));
+					System.out.println(email2+": "+"Valid | Local:"+email2.substring(0,email2.indexOf('@'))+" | Domain: "+email2.indexOf('@'));
 				}}else{
 					System.out.println("Invalid:Your email start or end with'.'");
 	}}else{
