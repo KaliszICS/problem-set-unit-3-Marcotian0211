@@ -46,7 +46,7 @@ public class ProblemSet {
 	}}else{
 					System.out.println("Invalid:Your email is too long or too shor after the last '.' ");
 	}}else{
-					System.out.println("Invalid;Your email is don't have '.' after '@'");
+					System.out.println("Invalid;Your email don't have '.' after '@'");
 	}}else{
 				System.out.println("Invalid:Your don't add '@' in your email");}
  
@@ -79,7 +79,7 @@ public class ProblemSet {
 	}}else{
 					System.out.println("Invalid:Your email is too long or too shor after the last '.' ");
 	}}else{
-					System.out.println("Invalid;Your email is don't have '.' after '@'");
+					System.out.println("Invalid;Your email don't have '.' after '@'");
 	}}else{
 				System.out.println("Invalid:Your don't add '@' in your email");}
 
