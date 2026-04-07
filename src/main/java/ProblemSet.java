@@ -7,7 +7,7 @@ public class ProblemSet {
 	String email;
 
       Scanner scanner=new Scanner(System.in);
-	  System.out.print("Input two email: "); 
+	  System.out.print("Input two emails: "); 
 	 //ask user to input.
 	  email=scanner.nextLine(); 
 	 //get value of input
