@@ -34,13 +34,14 @@ public class ProblemSet {
 					  if (email1.contains(" ")){     
 						//“email" have space inside will print"invalid:email don't have space".
 						System.out.println("Invalid:email don't have space");
+						
                              }else{
 							 System.out.print("");
 					  }System.out.println(email1.substring(0,email1.indexOf(','))+": "+"Valid(gmail normalized) | Local: "+ email1.substring(0, email1.indexOf('@')) 
-                   + " | Domain: " + email1.substring(email1.indexOf('@') )) ;
+                   + " | Domain: " + email1.substring(email1.indexOf('@')+1 )) ;
 	}else{
 					System.out.println(email1.substring(0,email1.indexOf(','))+": "+"Valid | Local: "+ email1.substring(0, email1.indexOf('@')) 
-                   + " | Domain: " + email1.substring(email1.indexOf('@'))) ;
+                   + " | Domain: " + email1.substring(email1.indexOf('@')+1)) ;
 	}}else{
 					System.out.println("Invalid:Your email is too long or too short before the '@'");
 	}}else{
@@ -54,12 +55,12 @@ public class ProblemSet {
 		 //make sure '@'is in the input.
 		 if (email2.substring(email2.indexOf('@')+1).contains(".")){   
 		 //make sure "." have at least one in email after'@'.
-            if (after.length()>=2&&after.length()<=6){   
+            if ( email2.substring(email2.lastIndexOf('.') + 1).length()>=2&&  email2.substring(email2.lastIndexOf('.') + 1).length()<=6){   
 			// The char amount more than or equal 2 and less than or equal 6 after last '.' in input.
-			  if(before.length()>=0 && before.length()<=64){  
+			  if(email2.substring(0,email2.indexOf('@')).length()>=0 && email1.substring(0,email1.indexOf('@')).length()<=64){  
 				//The char amount more than or equal 0 and less than or equal 64 before first'.' in input.
 		         if (email2.indexOf('.')!=0 && email2.indexOf('.')!=email2.length()-1){ 
-					//"."can't be start of email and end of email
+					//"."can't be start of email and end of email.
 					if(email2.substring(email2.indexOf('@')+1).equals("gmail.com")){
 						//make sure suffix is "gmail.com" will print "valid(gmail normalized)".
 					  if (email2.contains(" ")){     
@@ -71,7 +72,7 @@ public class ProblemSet {
 							}System.out.println(email2 +": " +"Valid(gmail normalized) | Local: " + email2.substring(0, email2.indexOf('@')) 
                    + " | Domain: " + email2.substring(email2.indexOf('@') + 1));
 				}else{
-					System.out.println(email2+": "+"Valid | Local:"+email2.substring(0,email2.indexOf('@'))+" | Domain: "+email2.indexOf('@'));
+					System.out.println(email2+": "+"Valid | Local:"+email2.substring(0,email2.indexOf('@'))+" | Domain: "+email2.substring(email2.indexOf('@')+1));
 				}}else{
 					System.out.println("Invalid:Your email start or end with'.'");
 	}}else{
