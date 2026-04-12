@@ -1,0 +1,11 @@
+K(30%): 95
+I(30%): 70
+C(10%): 75
+A(30%): 85
+82.5%
+
+You need to be able to accept one email as well still.
+Avoid nesting too much, you should be avoiding anything past 3 if possible, either by using function or reversing your conditions and using else if.
+When the second email is invalid you aren't showing the name of the email
+Missing extension check on first email.
+Missing Documentation
